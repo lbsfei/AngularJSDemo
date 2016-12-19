@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="utf-8">
+	<title>在控制器和模块定义中实现依赖注入</title>
+</head>
+<body>
+	<div ng-controller="controllerA">
+		<h2>Application Message:</h2>
+		{{message}}
+	</div><hr/>
+
+	<div ng-controller="controllerB">
+		<h2>Application Message:</h2>
+		{{message}}
+	</div><hr/>
+
+	<script type="text/javascript" src="js/lib/angular.min.js"></script>
+	<script type="text/javascript" src="js/injector.js"></script>
+</body>
+</html>

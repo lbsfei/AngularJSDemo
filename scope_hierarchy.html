@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta charset="utf-8">
+	<title>HTML模板代码，实现控制器的层次结构并呈现作用域的多个层次的结果</title>
+</head>
+<body>
+	<div ng-controller="LevelA">
+		<h3>{{title}}</h3>
+		ValueA = {{valueA}}<input type="button" ng-click="inc()" value="+"/>
+	
+
+		<div ng-controller="LevelB"><hr/>
+			<h3>{{title}}</h3>
+			ValueA = {{valueA}}<br/>
+			ValueB = {{valueB}}<input type="button" ng-click="inc()" value="+"/>
+
+
+			<div ng-controller="LevelC"><hr/>
+				<h3>{{title}}</h3>
+				ValueA = {{valueA}}<br/>
+				ValueB = {{valueB}}<br/>
+				ValueC = {{valueC}}<input type="button" ng-click="inc()" value="+"/>
+			</div>
+
+		</div>
+
+		
+	</div>
+
+
+	<script type="text/javascript" src="js/lib/angular.min.js"></script>
+	<script type="text/javascript" src="js/scope_hierarchy.js"></script>
+</body>
+</html>

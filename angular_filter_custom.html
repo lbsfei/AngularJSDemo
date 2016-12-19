@@ -1,0 +1,16 @@
+<!doctype html>
+<html ng-app="myApp">
+  <head>
+  <meta charset="utf-8">
+    <title>AngularJS Custom Filter 自定义过滤器</title>
+  </head>
+  <body>
+    <div ng-controller="myController">
+      <h2>Sorting and Filtering</h2>
+      {{phrase | censor:"***"}}<br>
+      {{"This is some bad, dark evil text." | censor:"happy"}}
+      <p ng-click="filterText()">{{txt}}</p>
+    <script src="js/lib/angular.min.js"></script>
+    <script src="./js/angular_filter_custom.js"></script>
+  </body>
+</html>

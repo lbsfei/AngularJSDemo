@@ -1,0 +1,51 @@
+AngularJS是双向绑定
+
+1.模板
+{{}}
+1.1表达式
+1.2过滤器
+1.3指令
+
+
+2.表达式,示例如下：
+{{1+5}}
+{{'one' + 'two'}}
+$scope.name='Book';
+$scope.score = 90;
+Name : {{name}}
+<span ng-click="scopeFunction()"></span>
+<span ng-click="scopeFunction(5*scopeVariable)"></span>
+<span ng-click="msg='clicked'"></span>
+
+
+3.过滤器：
+{{135.45|currency:"$USD"}}
+{{1357874848 | date:'yyyy-MM-dd HH:MM:ss Z'}}
+
+4.在AngularJS视图中实现指令
+4.1支持AngularJS功能的指令：
+ngApp
+ngCloak
+ngController
+ngHref
+ngList
+ngOpen
+ngSrc
+等等
+4.2扩展表单元素的指令：
+4.3自定义指令
+
+5.在web应用程序中实现AngularJS服务
+服务使用AngularJS的依赖注入机制来定义和注册.
+5.1内置的服务
+$animate
+$cacheFactory
+$compile
+$cookie
+$http
+$locale
+$route
+$timeout
+$window
+等等
+
